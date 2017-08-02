@@ -33,8 +33,12 @@ namespace BagOLoot
                     case 2:
                         AddToy.DoAction(bag, book);
                         break;
+                    // Menu option 3: Removing toy
+                    case 3:
+                        RemoveToy.DoAction(bag, book);
+                        break;
                 }
-            } while (choice != 3);
+            } while (choice != 4);
         }
     }
 }
