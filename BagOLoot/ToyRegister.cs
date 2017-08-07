@@ -32,8 +32,8 @@ namespace BagOLoot
       var toyList = from toy in _toys
       where toy.child == kid
       select toy;
+
       return toyList.ToList();
-      return _toys;
     }
   }
 }

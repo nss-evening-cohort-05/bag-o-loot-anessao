@@ -31,7 +31,7 @@ namespace BagOLoot.Tests
         {
             Child kid = _book.AddChild("Terell");
             Toy toy = _register.Add("Silly Putty", kid);
-            _register.RevokeToy(kid);
+            _register.RevokeToy(toy);
             List<Toy> toysForTerell = _register.GetToysForChild(kid);
 
             Assert.DoesNotContain(toy, toysForTerell);
